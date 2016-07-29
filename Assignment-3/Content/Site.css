@@ -78,6 +78,7 @@ textarea {
   background-color: #7ABA7A;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          
 }
 /* Nav links */
 .blog-nav-item {
@@ -95,23 +96,14 @@ textarea {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
 }
+
 img#img1 {
-    margin-top: 12px;
-    margin-bottom: -25px;
+    margin-bottom: -20%;
     height:66px;
     width:180px;
     }
-/* Footer part*/
-p#p1 {
-    color: #ffffff;
+a {
+    color:#b63535;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 40px;
-  background-color: #7aba7a;
-      border-top: 1px solid #861f87;
-      padding-left: 0;
-}
+/*Footer*/
+
