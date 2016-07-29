@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -20,5 +20,98 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 420px;
+}
+ .aboutme p{
+    padding-top: 75px;
+    color: #5a5858;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.3em;
+    width: 70%;
+    position: relative;
+    }
+    section {
+        padding-top: 5px;
+        font-family: 'Abel', sans-serif;
+        letter-spacing:2px;
+        font-size:1.4em;
+        
+        color:#5a5858;
+    }
+     img {
+    width: 30%;
+    }
+
+     h1 {
+    padding-top: 30px;
+    color: #5a5858;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.3em;
+    width: 70%;
+    position: relative;
+     }
+     Label {
+         color: #5a5858;
+     }
+     p {
+         color: #5a5858;
+         font-size: 0.9em;
+     }
+     span {
+         color: rgba(0,0,0,.1);
+     }
+  
+
+
+
+        /*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #7ABA7A;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* Nav links */
+.navbar-brand {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+img#img1 {
+    margin-top: 12px;
+    margin-bottom: -25px;
+    height:66px;
+    width:180px;
+    }
+/* Footer part*/
+p#p1 {
+    color: #ffffff;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #7aba7a;
+      border-top: 1px solid #861f87;
+      padding-left: 0;
 }
