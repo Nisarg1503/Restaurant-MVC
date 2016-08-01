@@ -1,46 +1,140 @@
 ﻿@model IEnumerable<Assignment_3.Models.Menu>
 
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+<!--
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MenuName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShortDecs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rate)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
 
-<h2>Index</h2>
+                <td>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.MenuName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShortDecs)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Rate)
-        </th>
-        <th></th>
-    </tr>
+                    @Html.ActionLink(item.MenuName, "Index", new { item = item.MenuName })
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.MenuName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShortDecs)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MenuID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MenuID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MenuID })
-        </td>
-    </tr>
-}
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortDecs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rate)
+                </td>
 
-</table>
+
+            </tr>
+        }
+
+    </table>
+    -->
+<style>
+
+
+    
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-4">
+            <div class="thumbnail">
+                <h3> Side Dish</h3>
+
+                <div class="caption">
+                    <p>
+                        <a>
+                            @Html.ActionLink("Butter Milk", "Index", "ButterMilks")
+                        </a>
+                        <br />flavored Indian buttermilk. It is made with plain yogurt, green chili, cilantro and spices.
+                        <img class="img-responsive" src="~/Assets/Images/Masala-Chaas.jpg" />
+                        <br /><b>$ 15.00</b>
+                    </p>
+                    <p>
+                        <a>
+                            @Html.ActionLink("Sambharo", "Index", "Sambharoes")
+                        </a>
+                        <br />Cabbage sambharo is nothing but the Gujarati style warm cabbage salad.
+                        <img class="img-responsive" src="~/Assets/Images/Sambharo.jpg" />
+                        <br /><b>$ 20.00</b>
+                    </p>
+                    <p>
+                        <a>
+                            @Html.ActionLink("Chutney", "Index", "Chutneys")
+                        </a>
+                        <br />Coriander chutney or Cilantro chutney or Dhaniya Chutney Whatever name you want give it.
+                        <img class="img-responsive" src="~/Assets/Images/Coriander chutney.jpg" />
+                        <br /><b>$ 10.00</b>
+                    </p>
+                    <p>
+                        <a>
+                            @Html.ActionLink("Pickle", "Index", "Pickles")
+                            <img class="img-responsive" src="~/Assets/Images/Pickle.jpg" />
+                        </a>
+                        <br />Aam Ka Achaar(Spicy Raw Mango Pickle)
+                        <br /><b>$ 10.00</b>
+                    </p>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 col-md-4">
+            <div class="thumbnail">
+                -
+                    <div class="thumbnail">
+                        <img id="img1" class="fancybox" src="~/Assets/Images/patang.jpg" width="355" height="223" />
+                    </div>
+                </a>
+
+                <div class="caption">
+                    <h5> Main dish </h5>
+                    <p>
+                        'Mini Dish' , 'Gujarati Mini Thali(Dish) Recipe Ideas is the place where you can find a few of the vast range of Gujarati recipes.' , 150.00
+                        'Full Dish(2 Side Dish and 1 Dessert of your choice)' , 'Gujarati Thali(Dish) Recipe Ideas is the place where you can find the vast range of Gujarati recipes.' , 180.00
+                    </p>
+                    <p> <b>$150 to $180 </b> </p>
+                    <p> @Html.ActionLink("Click here to view more...", "Index", "FruitCakes") </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+                <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                    <img id="img1" class="fancybox" src="~/Assets/Images/Mango-Lassi.jpg" width="300" height="223" />
+                </a>
+                <div class="caption">
+                    <h5>Dessert</h5>
+                    <p>
+                        'Rice kheer' , 'Instant rice kheer recipe made with cooked, leftover rice, milk and sweetened condensed milk.' , 25.00
+                        'Ice Cream(Dry-Fruit, Kaju-pista)' , 'Easy to make basic and eggless ice cream recipe. ' , 15.00)
+                        'Lassi(Mango,Pineapple,Regular' , 'a chilled beverage to beat the summer heat. It is made from mangoes, sugar and yogurt with pinch of cardamom powder.' , 20.00
+                    </p>
+                    <p> <b> $130 to $200 </b> </p>
+                    <p> @Html.ActionLink("Click here to view more...", "Index", "ThemeCakes") </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="showImg">
+                    <!-- here we create the image dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

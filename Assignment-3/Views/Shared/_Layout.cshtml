@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-        @Styles.Render("~/Content/Site.css")
+        
     @Styles.Render("~/Content/css")
         
     @Scripts.Render("~/bundles/modernizr")
@@ -39,13 +39,13 @@
         @RenderBody()
         <hr />
         <footer class="footer">
-            <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="navbar navbar-fixed-bottom">
                 <div class="container">
                     <div class="navbar-collapse collapse" id="footer-body">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Developed by Jinal Patel & Nisarg Patel</a></li>
-                            <li>@Html.ActionLink("Back to home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                            Developed by Jinal Patel & Nisarg Patel
+                            @Html.ActionLink("Back to home", "Index", "Home")
+                            @Html.ActionLink("Contact Us", "Contact", "Home")
                         </ul>
                     </div>
                     </div>
