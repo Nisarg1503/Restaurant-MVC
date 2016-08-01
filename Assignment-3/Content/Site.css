@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 0px;
     padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: medium;
 }
 
 /* Set padding to keep content from hitting the edges */
